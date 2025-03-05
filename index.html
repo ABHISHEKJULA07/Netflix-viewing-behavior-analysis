@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 40px;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: block;
+            color: #34495e;
+        }
+
+        #search {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            border: 2px solid #3498db;
+            border-radius: 6px;
+            outline: none;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        #search:focus {
+            border-color: #2980b9;
+            box-shadow: 0px 0px 8px rgba(41, 128, 185, 0.6);
+        }
+
+        .book-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .book-item {
+            background-color: #ecf0f1;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            font-size: 18px;
+            color: #2c3e50;
+            transition: background-color 0.3s ease;
+        }
+
+        .book-item:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .book-item span {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        .quote-container {
+            background-color: #f1c40f;
+            padding: 15px;
+            border-radius: 8px;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .date-container {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #34495e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Library Management System</h1>
+
+    <div class="container">
+        <div class="date-container" id="date"></div>
+        <div class="quote-container" id="quote"></div>
+
+        <label for="search">Search for a book:</label>
+        <input type="text" id="search" placeholder="Search for a book...">
+
+        <ul id="bookList" class="book-list"></ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Library Management System | Designed by Abhishek</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
