@@ -1,4 +1,4 @@
-## 📌 Developed By
+## 👨‍💻 Developed By
 
 **Abhishek Jula** 
 
